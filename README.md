@@ -79,6 +79,7 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 16 bit ALP 
+```
 
 org 100h
 
@@ -86,26 +87,31 @@ mov ax,0abcdh
 mov bx,2347h
 add ax,bx
 
+ret
+```
+
 
 
 ## Output  
-![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\add.png)
- 
-## Subtraction   of 16 bit numbers  ALP 
+![alt text](add.png)
 
+## Subtraction   of 16 bit numbers  ALP 
+```
 org 100h
 
 mov ax,[2350h]
 mov bx,[2347h]
 sub ax,bx
 
+ret
 
+```
  
 ## Output  
-![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\sub.png)
+![alt text](sub.png)
 
 ## Multiplication of 16 bit ALP
-
+```
 org 100h
 
 mov bx,2345h
@@ -114,12 +120,15 @@ mov ax,bx
 mov cx,dx
 mul cx 
 
+ret
+```
+
  ## Output 
- ![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\multiple.png) 
+ ![alt text](multiple.png)
 
 
 ## Division  of 16 bit ALP
-
+```
 org 100h
 
 mov bx,2000h
@@ -128,54 +137,60 @@ mov cx,05h
 mov dx,0
 div cx
 
+ret
+```
 ## Output  
-![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\divide.png)
+![alt text](divide.png)
 
 ## AND of 16 bit ALP
-
+```
 org 100h
 
 mov ax,0abcdh
 mov bx,2347h
 and ax,bx
 
+ret
+```
 ## Output
-![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\and.png)
+![alt text](and.png)
 
 ## OR of 16 bit ALP
-
+```
 org 100h
 
 mov ax,0abcdh
 mov bx,2347h
 or ax,bx
 
+ret
+```
 ## Output
-![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\or.png)
+![alt text](or.png)
 
 ## NOT of 16 bit ALP
-
+```
 org 100h
 
 mov ax,2431h
 not ax
 ret
-
+```
 ## Output
-![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\not.png)
+![alt text](not.png)
 
 ## XOR of 16 bit ALP
-
+```
 org 100h
 
 MOV AX, 5   
 MOV BX, 3   
 XOR AX, BX
 
+ret
+```
 ## Output
-![image](c:\Users\admin\Videos\Desktop\quartus\Pictures\PMC EXP\XOR.png)
-
-
+![alt text](XOR.png)
 ## Result :
 
   This ALP on fundamental arithmetic and logical operations is successfully executed.
